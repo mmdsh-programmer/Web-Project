@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero is-paddingless main-color is-fullheight">
+        <div class="columns is-multiline is-marginless">
+            <div class="column is-hidden-mobile sidebar-color is-3-tablet is-3-desktop is-paddingless">
+                <div class="hero is-sticky">
+                    <nav class="navbar sidebar-navbar">
+                        <div class="navbar-menu is-active">
+                            <div class="navbar-end is-pulled-right">
+                                <div class="navbar-item">
+                                    <a href="#">
+                                        <span class="icon has-text-grey-light">
+                                            <i class="fa fa-bars"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="container has-text-centered">
+                        <a href="#" class="is-flex is-centered center-pic is-relative">
+                            <div class="image is-64x64">
+                                <img class="is-rounded" src="images/user.jpg" alt="">
+                            </div>
+                            <a href="#" class="user-badge">
+                                <div class="image is-16x16 is-flex has-background-danger center-pic">
+                                    <span class="is-rounded"><i class="fa fa-check has-text-white"></i></span>
+                                </div>
+                            </a>
+                        </a>
+                        <strong class="is-size-6 has-text-grey-dark">Anthony Miller</strong>
+                        <small class="is-block is-size-7 has-text-grey">Acountant</small>
+                    </div>
+
+                    <aside class="menu">
+                        <ul class="menu-list">
+                            <li class="active"><a href="#" class="has-text-grey-darker"><i class="fa fa-qrcode"></i> Dashboard</a></li>
+                            <li><a href="#" class="has-text-grey"><i class="fa fa-file-o"></i> Invoices</a></li>
+                            <li><a href="#" class="has-text-grey"><i class="fa fa-money"></i> Bills</a></li>
+                            <li><a href="#" class="has-text-grey"><i class="fa fa-share"></i> Reconcile</a></li>
+                            <li><a href="#" class="has-text-grey"><i class="fa fa-envelope-o"></i> Messages</a></li>
+                            <li><a href="#" class="has-text-grey"><i class="fa fa-cog"></i> Settings</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+            <div class="column main-content">
+                <nav class="navbar">
+                    <div class="navbar-menu is-active">                      
+                        <div class="navbar-start is-hidden-touch">
+                            <div class="navbar-item">
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input type="search" class="input" placeholder="Search for transactions, accounts...">
+                                        <span class="icon is-small is-left has-text-grey-light">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-end is-pulled-right is-flex">
+                            <div class="navbar-item is-hidden-tablet is-flex-touch menu-bars">
+                                <a href="#">
+                                    <span class="icon has-text-grey-light">
+                                        <i class="fa fa-bars"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="navbar-item is-hidden-desktop is-flex-touch">
+                                <a href="#">
+                                    <span class="icon has-text-grey-light">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="navbar-item is-flex">
+                                <span class="badge"></span>
+                                <a href="#">
+                                    <span class="icon has-text-grey-light">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="navbar-item is-flex">
+                                <span class="badge"></span>
+                                <a href="#">
+                                    <span class="icon has-text-grey-light">
+                                        <i class="fa fa-bell-o"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="navbar-item image is-64x64 is-flex">
+                                <span class="badge"></span>
+                                <a href="#">
+                                    <img class="is-rounded" src="images/user.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <section class="section modified">
+                    <div class="box is-shadowless is-bordered">
+                        <div class="columns is-desktop">
+                            <div class="column">
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            <h3 class="is-size-3 has-text-weight-semibold is-size-4-touch">$1,263.78</h3>
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            <time class="is-size-6 has-text-weight-medium is-size-7-touch">Oct 22, 2019</time>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="is-size-6 has-text-grey is-size-7-touch">
+                                    Hello Anthony, it's nice to see you again on your dashboard. You currently
+                                    have 3 new invoices to review and 4 invoices to approve. Here is your team's
+                                    latest activity.
+                                </p>
+                                <table class="table is-narrow is-fullwidth is-hoverable">
+                                    <tbody>
+                                        <tr>
+                                            <td class="has-text-grey-light is-size-6 is-size-7-touch">Oct 02</td>
+                                            <td class="has-text-weight-medium is-size-6 is-size-7-touch">Mobile Invoice</td>
+                                            <td class="has-text-right has-text-weight-medium is-size-6 is-size-7-touch">-$78.56</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="has-text-grey-light is-size-6 is-size-7-touch">Sep 29</td>
+                                            <td class="has-text-weight-medium is-size-6 is-size-7-touch">Bank Transfer</td>
+                                            <td class="has-text-right has-text-weight-medium has-text-danger is-size-6 is-size-7-touch">+$978.79</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="column is-flex bars">
+                                <div class="bars-text">
+                                    <h3 class="is-size-6 has-text-centered-touch has-text-weight-semibold has-mb-2">Summary</h3>
+                                    <ul>
+                                        <li class="is-size-7 has-text-grey-light">Sun</li>
+                                        <li class="is-size-7 has-text-grey-light">Mon</li>
+                                        <li class="is-size-7 has-text-grey-light">Tue</li>
+                                        <li class="is-size-7 has-text-grey-light">Wed</li>
+                                        <li class="is-size-7 has-text-grey-light">Thu</li>
+                                        <li class="is-size-7 has-text-grey-light">Fri</li>
+                                        <li class="is-size-7 has-text-grey-light">Sat</li>
+                                    </ul>
+                                    <svg version="1.1" baseProfile="full" height="200">
+                                        <rect width="100%" height="100%" fill="transparent" />
+                                        <rect x="15" width="10" height="120" y="80" style="fill:rgb(231,60,126);" rx="4" ry="4" />
+                                        <rect x="55" width="10" height="150" y="50" style="fill:rgb(231,60,126);" rx="4" ry="4" />
+                                        <rect x="95" width="10" height="170" y="30" style="fill:rgb(141,192,253);" rx="4" ry="4" />
+                                        <rect x="135" width="10" height="120" y="80" style="fill:rgb(231,60,126);" rx="4" ry="4" />
+                                        <rect x="175" width="10" height="200"  style="fill:rgb(231,60,126);" rx="4" ry="4" />
+                                        <rect x="215" width="10" height="190" y="10"  style="fill:rgb(231,60,126);" rx="4" ry="4" />
+                                        <rect x="255" width="10" height="120" y="80"  style="fill:rgb(141,192,253);" rx="4" ry="4" />
+                                    </svg> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section modified">
+                    <div class="columns is-desktop">
+                        <div class="column is-8-desktop is-flex">
+                            <div class="box is-shadowless is-bordered is-flex">
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            <div class="message-border">
+                                                <span class="icon message-border number-1">
+                                                    <i class="fa fa-envelope-o has-text-info"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="level-item">
+                                            <div class="image is-48x48 is-flex">
+                                                <a href="#">
+                                                    <img class="is-rounded" src="images/marry.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="level-item is-flexless laptop-fix">
+                                            <span class="is-size-6">Marry Smith</span>
+                                            <span class="is-size-7 has-text-grey-light">sent a message</span>
+                                        </div>
+                                    </div>
+                                    <p class="is-size-7 has-text-grey-light">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Cur deinde Metrodori liberos commendas...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="box is-shadowless is-bordered">
+                                <div class="level">
+                                    <span class="is-size-7 has-text-grey-light is-uppercase is-pulled-left">incoming</span>
+                                    <button class="button is-rounded is-small is-view is-pulled-right">View All</button>
+                                </div>
+                                <div class="level">
+                                    <h3 class="is-size-3 has-text-weight-semibold is-size-4-touch">$2,459.12</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section modified">
+                    <span class="icon is-pulled-left has-text-grey-light">
+                        <i class="fa fa-heartbeat"></i>
+                    </span>
+                    <span class="is-uppercase is-pulled-left has-text-grey-light">activity</span>
+                    <a href="#">
+                        <span class="icon is-pulled-right has-text-grey-light">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </span>
+                    </a>
+                </section>
+                <section class="section modified">
+                    <div class="box is-shadowless is-bordered">
+                        <div class="level is-relative">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <div class="image is-48x48 is-flex bordered-image">
+                                        <a href="#">
+                                            <img class="is-rounded" src="images/marry.jpeg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <div class="image is-48x48 is-flex bordered-image minus-margin has-background-warning center-pic">
+                                            <span class="has-text-white">J</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="level-item is-flexless is-rborderless">
+                                    <span class="is-size-6 is-size-7-touch">Mary and Janet</span>
+                                    <span class="is-size-7 has-text-grey-light">approved invoice #INV-7894</span>
+                                </div>
+                                
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item is-flexless is-rborderless">
+                                    <span class="is-size-7 has-text-grey-light is-uppercase">amount</span>
+                                    <span class="is-size-6 is-size-7-touch">$768.49</span>
+                                </div>
+                                <div class="level-item">
+                                    <a href="#">
+                                        <span class="icon is-hidden-mobile">
+                                            <i class="fa fa-file-o has-text-info is-size-6"></i>
+                                        </span>
+                                    </a>    
+                                </div>
+                                <div class="level-item">
+                                    <span class="icon modified-icon">
+                                        <i class="fa fa-ellipsis-h has-text-grey-light"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section modified">
+                    <div class="box is-shadowless is-bordered">
+                        <div class="level is-relative">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <a href="#">
+                                        <div class="image is-48x48 is-flex bordered-image has-background-success center-pic">
+                                            <span class="has-text-white">P</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="image is-48x48 is-flex bordered-image minus-margin has-background-link center-pic">
+                                            <span class="has-text-white">K</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="level-item is-flexless is-rborderless">
+                                    <span class="is-size-6 is-size-7-touch">Paul and Kristie</span>
+                                    <span class="is-size-7 has-text-grey-light">approved invoice #INV-7899</span>
+                                </div>
+                                
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item is-flexless is-rborderless">
+                                    <span class="is-size-7 has-text-grey-light is-uppercase">amount</span>
+                                    <span class="is-size-6 is-size-7-touch">$259.12</span>
+                                </div>
+                                <div class="level-item">
+                                    <a href="#">
+                                        <span class="icon is-hidden-mobile">
+                                            <i class="fa fa-file-o has-text-info is-size-6"></i>
+                                        </span>
+                                    </a>    
+                                </div>
+                                <div class="level-item">
+                                    <span class="icon modified-icon">
+                                        <i class="fa fa-ellipsis-h has-text-grey-light"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section modified">
+                    <div class="box is-shadowless is-bordered">
+                        <div class="level is-relative">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <div class="image is-48x48 is-flex bordered-image">
+                                        <a href="#">
+                                            <img class="is-rounded" src="images/alex.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <div class="image is-48x48 is-flex bordered-image minus-margin has-background-danger center-pic">
+                                            <span class="has-text-white">K</span>
+                                        </div>
+                                    </a>
+                                    <div class="image is-48x48 is-flex bordered-image minus-margin">
+                                        <a href="#">
+                                            <img class="is-rounded" src="images/adam.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="level-item is-flexless is-rborderless">
+                                    <span class="is-size-6 is-size-7-touch">Alex, Sheryl and Adam</span>
+                                    <span class="is-size-7 has-text-grey-light">approved invoice #INV-7899</span>
+                                </div>
+                                
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item is-flexless is-rborderless">
+                                    <span class="is-size-7 has-text-grey-light is-uppercase">amount</span>
+                                    <span class="is-size-6 is-size-7-touch">$1024.49</span>
+                                </div>
+                                <div class="level-item">
+                                    <a href="#">
+                                        <span class="icon is-hidden-mobile">
+                                            <i class="fa fa-file-o has-text-info is-size-6"></i>
+                                        </span>
+                                    </a>    
+                                </div>
+                                <div class="level-item">
+                                    <span class="icon modified-icon">
+                                        <i class="fa fa-ellipsis-h has-text-grey-light"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section modified">
+                    <div class="box is-shadowless is-bordered">
+                        <div class="level is-relative">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <div class="image is-48x48 is-flex bordered-image">
+                                        <a href="#">
+                                            <img class="is-rounded" src="images/tommy.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="image is-48x48 is-flex bordered-image minus-margin">
+                                        <a href="#">
+                                            <img class="is-rounded" src="images/sally.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="image is-48x48 is-flex bordered-image minus-margin">
+                                        <a href="#">
+                                            <img class="is-rounded" src="images/christie.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <div class="image is-48x48 is-flex bordered-image minus-margin has-background-grey-lighter center-pic">
+                                            <span class="has-text-black">+2</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="level-item is-flexless is-rborderless">
+                                    <span class="is-size-6 is-size-7-touch">Tommy, Sally and Christina</span>
+                                    <span class="is-size-7 has-text-grey-light">approved invoice #INV-7815</span>
+                                </div>
+                                
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item is-flexless is-rborderless">
+                                    <span class="is-size-7 has-text-grey-light is-uppercase">amount</span>
+                                    <span class="is-size-6 is-size-7-touch">$3269.99</span>
+                                </div>
+                                <div class="level-item">
+                                    <a href="#">
+                                        <span class="icon is-hidden-mobile">
+                                            <i class="fa fa-file-o has-text-info is-size-6"></i>
+                                        </span>
+                                    </a>    
+                                </div>
+                                <div class="level-item">
+                                    <span class="icon modified-icon">
+                                        <i class="fa fa-ellipsis-h has-text-grey-light"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
